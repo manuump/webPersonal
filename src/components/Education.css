@@ -1,0 +1,60 @@
+.education__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.education__meta {
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 1.1rem;
+}
+
+.education__desc {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  max-width: 46ch;
+}
+
+.goal-card {
+  position: relative;
+  border: 1px solid var(--border-strong);
+  background: linear-gradient(160deg, var(--bg-panel-alt), var(--bg-panel));
+  border-radius: var(--radius-lg);
+  padding: 2.2rem 2rem;
+}
+
+.goal-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  padding: 1px;
+  background: linear-gradient(135deg, var(--accent-dim), transparent 60%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.goal-card__tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 1.1rem;
+}
+
+.goal-card__text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+@media (max-width: 860px) {
+  .education__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

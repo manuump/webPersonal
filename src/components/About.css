@@ -1,0 +1,33 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about__text p {
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.about__text p::first-letter {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.about__photo {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 860px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about__photo {
+    order: -1;
+  }
+}

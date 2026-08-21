@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+<style>
+  @font-face {
+    font-family: "Inter";
+    src: local("Inter");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 1200px;
+    height: 630px;
+    background: #050a08;
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    color: #eaf3ee;
+  }
+
+  .bg-glow {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 800px 500px at 8% -10%, rgba(57, 217, 138, 0.16), transparent 60%),
+      radial-gradient(ellipse 600px 500px at 105% 15%, rgba(57, 217, 138, 0.1), transparent 55%);
+  }
+
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(57, 217, 138, 0.09) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(57, 217, 138, 0.09) 1px, transparent 1px);
+    background-size: 40px 40px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at 30% 40%, black 30%, transparent 85%);
+    mask-image: radial-gradient(ellipse 70% 70% at 30% 40%, black 30%, transparent 85%);
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 76px 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    color: #39d98a;
+    border: 1px solid rgba(57, 217, 138, 0.32);
+    background: rgba(57, 217, 138, 0.08);
+    padding: 8px 18px;
+    border-radius: 999px;
+    width: fit-content;
+    margin-bottom: 34px;
+  }
+
+  .status-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #5cffb0;
+    box-shadow: 0 0 10px 2px rgba(92, 255, 176, 0.7);
+  }
+
+  .name {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    background: linear-gradient(120deg, #eaf3ee 55%, #5cffb0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 22px;
+  }
+
+  .role {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 26px;
+    color: #5cffb0;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    font-size: 24px;
+    color: #9fb3ac;
+    max-width: 780px;
+  }
+
+  .shield {
+    position: absolute;
+    top: 76px;
+    right: 80px;
+    width: 108px;
+    height: 108px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    color: #647570;
+  }
+
+  .footer b {
+    color: #9fb3ac;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="grid"></div>
+
+  <svg class="shield" viewBox="0 0 64 64">
+    <rect width="64" height="64" rx="14" fill="#0d1a16" stroke="rgba(57,217,138,0.3)" stroke-width="1"/>
+    <path d="M32 7 L49 13.5 V29 C49 42.5 42 51.5 32 57 C22 51.5 15 42.5 15 29 V13.5 Z"
+          fill="#0d1a16" stroke="#39d98a" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M25.5 23 L33 30.5 L25.5 38" fill="none" stroke="#5cffb0" stroke-width="3.2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="35.5" y1="38" x2="43.5" y2="38" stroke="#5cffb0" stroke-width="3.2" stroke-linecap="round"/>
+  </svg>
+
+  <div class="content">
+    <div class="status">
+      <span class="status-dot"></span>
+      SYSTEM_ONLINE &middot; SECURITY_STATUS: ACTIVE
+    </div>
+    <div class="name">Manuel Martínez<br/>Pegalajar</div>
+    <div class="role">Técnico IT · Ciberseguridad · SOC Junior · Desarrollo de Software</div>
+    <div class="tagline">Técnico Superior en DAM con experiencia en soporte IT, desarrollo de software y ciberseguridad.</div>
+  </div>
+
+  <div class="footer">
+    <span><b>Jaén, España</b></span>
+    <span>github.com/manuump</span>
+  </div>
+</body>
+</html>
