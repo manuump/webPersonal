@@ -91,24 +91,40 @@
     margin-bottom: 3mm;
   }
 
-  .header__portfolio {
+  .header__portfolio-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4mm;
+    margin-bottom: 3.6mm;
+  }
+
+  .header__portfolio-label {
+    font-size: 7.6pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7fe0ac;
+  }
+
+  .header__portfolio-btn {
     position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 1.6mm;
-    font-size: 9.2pt;
-    font-weight: 600;
-    color: #eaf3ee;
-    background: rgba(57, 217, 138, 0.12);
-    border: 0.3mm solid rgba(57, 217, 138, 0.4);
-    padding: 1.6mm 3mm;
+    gap: 2mm;
+    font-size: 9.4pt;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #04140d;
+    background: #39d98a;
+    padding: 2mm 4.4mm;
     border-radius: 1.5mm;
-    margin-bottom: 3.4mm;
     text-decoration: none;
+    box-shadow: 0 0 4mm 0.4mm rgba(57, 217, 138, 0.5);
   }
 
-  .header__portfolio-prompt {
-    color: #5cffb0;
+  .header__portfolio-btn-icon {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
   }
 
   .header__meta {
@@ -377,9 +393,12 @@
       </div>
       <div class="header__name">Manuel Martínez Pegalajar</div>
       <div class="header__role mono">Técnico IT · Ciberseguridad · SOC Junior · Desarrollo de Software</div>
-      <a class="header__portfolio mono" href="https://web-personal-manuel.vercel.app/">
-        <span class="header__portfolio-prompt">&gt;_</span> web-personal-manuel.vercel.app
-      </a>
+      <div class="header__portfolio-row">
+        <span class="header__portfolio-label mono">Web personal · Portfolio</span>
+        <a class="header__portfolio-btn mono" href="https://web-personal-manuel.vercel.app/">
+          <span class="header__portfolio-btn-icon">&gt;_</span> VISITAR SITIO
+        </a>
+      </div>
       <div class="header__meta mono">
         <span><b>Ubicación</b> Jaén, Andalucía, España</span>
         <span><b>Email</b> manuujaen00@gmail.com</span>
