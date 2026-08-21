@@ -4,7 +4,6 @@ export const profile = {
   location: "Jaén, Andalucía, España",
   tagline: "Técnico Superior en DAM con experiencia en soporte IT, desarrollo de software y ciberseguridad.",
   email: "manuujaen00@gmail.com",
-  phone: "653 86 81 73",
   linkedin: "https://www.linkedin.com/in/manuel-mart%C3%ADnez-pegalajar-942191372/",
   github: "https://github.com/manuump",
   cvPath: "/cv.pdf",

@@ -19,10 +19,6 @@ export default function Contact() {
             <span className="contact__label mono">EMAIL</span>
             <span className="contact__value contact__value--sm">{profile.email}</span>
           </a>
-          <a className="contact__item" href={`tel:${profile.phone.replace(/\s+/g, "")}`}>
-            <span className="contact__label mono">TELÉFONO</span>
-            <span className="contact__value">{profile.phone}</span>
-          </a>
           <a className="contact__item" href={profile.linkedin} target="_blank" rel="noreferrer">
             <span className="contact__label mono">LINKEDIN</span>
             <span className="contact__value">Ver perfil ↗</span>
