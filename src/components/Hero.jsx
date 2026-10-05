@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="hero__content">
           <div className="hero__status mono">
             <span className="hero__status-dot" />
-            SYSTEM_ONLINE · SECURITY_STATUS: ACTIVE
+            SYSTEM_ONLINE · FRONTEND_BUILD: PASSING · SECURITY_STATUS: ACTIVE
           </div>
 
           <h1 className="hero__name">{profile.name}</h1>

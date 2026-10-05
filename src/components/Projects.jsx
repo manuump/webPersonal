@@ -10,7 +10,7 @@ export default function Projects() {
           <div className="section-kicker mono">04 · Proyectos</div>
           <h2 className="section-title">Proyectos destacados</h2>
           <p className="section-lead">
-            Una muestra de sistemas que he desarrollado, con foco en arquitectura, backend y aplicación real.
+            Una muestra de aplicaciones que he desarrollado de principio a fin: interfaces con React y Next.js, backend, arquitectura y uso real.
           </p>
         </Reveal>
 

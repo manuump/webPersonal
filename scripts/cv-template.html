@@ -20,7 +20,7 @@
     color: #1c2624;
     background: #ffffff;
     font-size: 9.6pt;
-    line-height: 1.36;
+    line-height: 1.3;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -40,7 +40,7 @@
   .header {
     background: #0a1310;
     color: #eaf3ee;
-    padding: 7mm 16mm 5mm;
+    padding: 6mm 16mm 4.5mm;
     position: relative;
     overflow: hidden;
   }
@@ -147,7 +147,7 @@
   }
 
   .section {
-    margin-bottom: 3.2mm;
+    margin-bottom: 2.6mm;
   }
 
   .section__kicker {
@@ -189,7 +189,7 @@
     display: grid;
     grid-template-columns: 34mm 1fr;
     gap: 4mm;
-    margin-bottom: 2.4mm;
+    margin-bottom: 1.8mm;
     page-break-inside: avoid;
   }
 
@@ -389,10 +389,10 @@
     <header class="header">
       <div class="header__status mono">
         <span class="header__status-dot"></span>
-        SECURITY_STATUS: ACTIVE · SYSTEM_ONLINE
+        FRONTEND_BUILD: PASSING · SYSTEM_ONLINE
       </div>
       <div class="header__name">Manuel Martínez Pegalajar</div>
-      <div class="header__role mono">Técnico IT · Ciberseguridad · SOC Junior · Desarrollo de Software</div>
+      <div class="header__role mono">Desarrollador Front-End (React · JavaScript) · Técnico IT · Ciberseguridad</div>
       <div class="header__portfolio-row">
         <span class="header__portfolio-label mono">Web personal · Portfolio</span>
         <a class="header__portfolio-btn mono" href="https://web-personal-manuel.vercel.app/">
@@ -411,13 +411,11 @@
       <section class="section">
         <div class="section__kicker mono">01 · Perfil profesional</div>
         <p class="about-text">
-          Técnico Superior en Desarrollo de Aplicaciones Multiplataforma con experiencia en soporte IT,
-          desarrollo de software y ciberseguridad. Actualmente trabaja como Técnico IT y Programador
-          Informático en Real Jaén C.F., realizando soporte a usuarios y resolución de incidencias de
-          hardware, software, redes e impresoras, además del desarrollo y mantenimiento de aplicaciones.
-          Cuenta con experiencia previa en Hispasec, participando en tareas de análisis, clasificación y
-          triaje de casos relacionados principalmente con phishing e ingeniería social. Su objetivo
-          profesional es continuar desarrollándose en sistemas y operaciones de seguridad.
+          Soy Técnico Superior en DAM y desarrollo aplicaciones web. Trabajo con React, Next.js y JavaScript,
+          creando interfaces dinámicas y responsive con HTML5 y CSS3, y las integro con APIs REST que
+          también desarrollo (Spring Boot, Node.js), como en ClubMaster o Jaén Card. En Real Jaén C.F.
+          desarrollo plataformas web a medida para el club y clientes externos, y soy su técnico IT interno.
+          Mi paso por Hispasec en ciberseguridad me aporta atención a la calidad y seguridad del código.
         </p>
       </section>
 
@@ -431,14 +429,16 @@
           </div>
           <div>
             <div class="job__company">Real Jaén C.F. S.A.D.</div>
-            <div class="job__role">Técnico IT / Programador Informático</div>
+            <div class="job__role">Programador Informático / Técnico IT</div>
             <ul class="job__list">
-              <li>Soporte técnico a usuarios</li>
-              <li>Diagnóstico de hardware y software</li>
-              <li>Redes e impresoras</li>
+              <li>Plataformas web a medida (club y clientes)</li>
+              <li>Interfaces responsive con React y JavaScript</li>
+              <li>Integración del front con APIs backend</li>
+              <li>Soporte en la plataforma web de abonados</li>
+              <li>Helpdesk presencial y telefónico</li>
+              <li>Incidencias de HW, SW, redes e impresoras</li>
               <li>Configuración y mantenimiento de equipos</li>
-              <li>Desarrollo y mantenimiento de apps web</li>
-              <li>Resolución de incidencias</li>
+              <li>Atención al cliente, abonos y tienda oficial</li>
             </ul>
           </div>
         </div>
@@ -450,6 +450,7 @@
             <div class="job__role">Programador Full Stack</div>
             <ul class="job__list">
               <li>Desarrollo y mantenimiento de apps web</li>
+              <li>Maquetación con HTML, CSS y JavaScript</li>
               <li>PHP</li>
               <li>Bases de datos</li>
               <li>Resolución de errores e incidencias</li>
@@ -478,6 +479,17 @@
         <div class="areas-grid">
           <div class="area-card">
             <div class="area-card__head">
+              <span class="area-card__title">Front-End &amp; Web</span>
+              <span class="area-card__status mono">ACTIVE</span>
+            </div>
+            <div class="area-card__tags mono">
+              <span>React</span><span>JavaScript</span><span>Next.js</span><span>HTML5</span>
+              <span>CSS3</span><span>Responsive</span><span>Spring Boot</span><span>Java</span>
+              <span>REST APIs</span><span>Node.js</span><span>PHP</span>
+            </div>
+          </div>
+          <div class="area-card">
+            <div class="area-card__head">
               <span class="area-card__title">IT &amp; Soporte</span>
               <span class="area-card__status mono">ACTIVE</span>
             </div>
@@ -496,24 +508,14 @@
               <span>Análisis de casos</span><span>SIEM (conceptos)</span><span>EDR (conceptos)</span>
             </div>
           </div>
-          <div class="area-card">
-            <div class="area-card__head">
-              <span class="area-card__title">Desarrollo</span>
-              <span class="area-card__status mono">ACTIVE</span>
-            </div>
-            <div class="area-card__tags mono">
-              <span>Java</span><span>JavaScript</span><span>PHP</span>
-              <span>React</span><span>Spring Boot</span><span>Node.js</span><span>REST APIs</span>
-            </div>
-          </div>
         </div>
       </section>
 
       <section class="section">
         <div class="section__kicker mono">04 · Stack tecnológico</div>
         <div class="stack-grid">
-          <div class="stack-row"><span class="stack-group__title mono">Lenguajes</span><span class="stack-group__items">Java · JavaScript · Kotlin · PHP · HTML · CSS</span></div>
-          <div class="stack-row"><span class="stack-group__title mono">Frontend</span><span class="stack-group__items">React · Next.js · Vite</span></div>
+          <div class="stack-row"><span class="stack-group__title mono">Frontend</span><span class="stack-group__items">React · Next.js · Vite · HTML5 · CSS3 · Responsive</span></div>
+          <div class="stack-row"><span class="stack-group__title mono">Lenguajes</span><span class="stack-group__items">JavaScript · Java · Kotlin · PHP · HTML · CSS</span></div>
           <div class="stack-row"><span class="stack-group__title mono">Backend</span><span class="stack-group__items">Spring Boot · Node.js</span></div>
           <div class="stack-row"><span class="stack-group__title mono">Bases de datos</span><span class="stack-group__items">MySQL · PostgreSQL · MongoDB · Oracle</span></div>
           <div class="stack-row"><span class="stack-group__title mono">DevOps / Tools</span><span class="stack-group__items">Docker · Git · GitHub</span></div>
@@ -535,9 +537,9 @@
           <div class="goal-box">
             <span class="goal-box__tag mono">OBJETIVO_PROFESIONAL</span>
             <p class="goal-box__text">
-              Seguir creciendo profesionalmente en tecnologías de la información, especialmente en
-              soporte IT, sistemas y ciberseguridad, adquiriendo experiencia y especialización en
-              entornos profesionales de alta exigencia.
+              Crecer como desarrollador Front-End en proyectos de alto impacto, creando interfaces
+              cuidadas, accesibles y de calidad, y seguir ampliando mi stack (Angular, SASS) sin
+              perder mi base en soporte IT, sistemas y ciberseguridad.
             </p>
           </div>
         </div>

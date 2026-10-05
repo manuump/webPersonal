@@ -10,7 +10,7 @@ export default function Contact() {
           <div className="section-kicker mono">07 · Contacto</div>
           <h2 className="section-title contact__title">¿Hablamos?</h2>
           <p className="section-lead contact__lead">
-            Estoy abierto a nuevas oportunidades profesionales en IT, sistemas, soporte y ciberseguridad.
+            Estoy abierto a nuevas oportunidades profesionales en desarrollo Front-End y web, además de IT, sistemas, soporte y ciberseguridad.
           </p>
         </Reveal>
 

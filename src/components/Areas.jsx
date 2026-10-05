@@ -10,8 +10,9 @@ export default function Areas() {
           <div className="section-kicker mono">03 · Áreas profesionales</div>
           <h2 className="section-title">Dónde aporto valor</h2>
           <p className="section-lead">
-            Mi perfil principal evoluciona hacia IT y ciberseguridad. El desarrollo de software es una
-            competencia adicional que complementa esa base técnica.
+            Mi foco principal es el desarrollo Front-End: interfaces web dinámicas, responsive y bien
+            integradas con el backend. Mi experiencia en IT y ciberseguridad complementa esa base y me
+            ayuda a construir aplicaciones más robustas y seguras.
           </p>
         </Reveal>
 

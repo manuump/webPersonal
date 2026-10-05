@@ -10,7 +10,7 @@ export default function Experience() {
           <div className="section-kicker mono">02 · Trayectoria</div>
           <h2 className="section-title">Experiencia</h2>
           <p className="section-lead">
-            Registro cronológico de mi actividad profesional en IT, ciberseguridad y desarrollo.
+            Registro cronológico de mi actividad profesional en desarrollo web, IT y ciberseguridad.
           </p>
         </Reveal>
 

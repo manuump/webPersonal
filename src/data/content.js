@@ -1,29 +1,35 @@
 export const profile = {
   name: "Manuel Martínez Pegalajar",
-  role: "Técnico IT · Ciberseguridad · SOC Junior · Desarrollo de Software",
+  role: "Desarrollador Front-End (React · JavaScript) · Técnico IT · Ciberseguridad",
   location: "Jaén, Andalucía, España",
-  tagline: "Técnico Superior en DAM con experiencia en soporte IT, desarrollo de software y ciberseguridad.",
+  tagline: "Técnico Superior en DAM. Desarrollo interfaces web dinámicas y responsive con React y JavaScript, con base sólida en soporte IT y ciberseguridad.",
   email: "manuujaen00@gmail.com",
   linkedin: "https://www.linkedin.com/in/manuel-mart%C3%ADnez-pegalajar-942191372/",
   github: "https://github.com/manuump",
   cvPath: "/cv.pdf",
 };
 
-export const about = `Técnico Superior en Desarrollo de Aplicaciones Multiplataforma con experiencia en soporte IT, desarrollo de software y ciberseguridad. Actualmente trabajo como Técnico IT y Programador Informático en Real Jaén C.F., dando soporte a usuarios y resolviendo incidencias de hardware, software, redes e impresoras, además de desarrollar y mantener aplicaciones. Cuento con experiencia previa en Hispasec, analizando y clasificando casos de phishing e ingeniería social. Mi objetivo es seguir creciendo en sistemas y operaciones de seguridad, aprendiendo rápido y resolviendo problemas de forma metódica.`;
+export const about = `Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y me dedico a crear aplicaciones web. En el front-end trabajo con React, Next.js y JavaScript, construyendo interfaces dinámicas y responsive con HTML5 y CSS3, y las integro con APIs REST que también desarrollo (Spring Boot, Node.js). Actualmente trabajo como Programador Informático y Técnico IT en Real Jaén C.F., donde desarrollo y mantengo aplicaciones y plataformas web, además de dar soporte a usuarios y resolver incidencias de hardware, software, redes e impresoras. Antes trabajé como Programador Full Stack en Liberi Software y en Hispasec, analizando y clasificando casos de phishing e ingeniería social, lo que me aporta una visión cuidadosa de la calidad y la seguridad del código. Aprendo rápido, resuelvo problemas de forma metódica y me gusta colaborar con equipos de diseño y backend para que el producto final funcione y se vea bien.`;
 
 export const experience = [
   {
     company: "Real Jaén C.F. S.A.D.",
-    role: "Técnico IT / Programador Informático",
+    role: "Programador Informático / Técnico IT",
     period: "Abril 2026 – Actualidad",
     current: true,
     items: [
+      "Desarrollo y mantenimiento de aplicaciones y plataformas web",
+      "Plataformas web y aplicaciones a medida para el club y clientes externos",
+      "Interfaces dinámicas y responsive con React y JavaScript",
+      "Integración del front-end con APIs y servicios backend",
+      "Soporte en la plataforma web de abonados",
       "Soporte técnico a usuarios",
+      "Helpdesk presencial y telefónico",
       "Diagnóstico de hardware y software",
       "Gestión de redes e impresoras",
       "Configuración y mantenimiento de equipos",
-      "Desarrollo y mantenimiento de aplicaciones y plataformas web",
       "Resolución de incidencias",
+      "Gestión y venta de abonos y entradas, atención al cliente y tienda oficial",
     ],
   },
   {
@@ -33,6 +39,7 @@ export const experience = [
     current: false,
     items: [
       "Desarrollo y mantenimiento de aplicaciones web",
+      "Maquetación con HTML, CSS y JavaScript",
       "PHP",
       "Bases de datos",
       "Resolución de errores e incidencias",
@@ -55,6 +62,12 @@ export const experience = [
 
 export const areas = [
   {
+    id: "dev",
+    label: "Desarrollo Front-End & Web",
+    status: "ACTIVE",
+    items: ["React", "JavaScript", "Next.js", "HTML5 · CSS3", "Diseño responsive", "Java", "PHP", "Spring Boot", "Node.js", "REST APIs"],
+  },
+  {
     id: "it",
     label: "IT & Soporte",
     status: "ACTIVE",
@@ -65,12 +78,6 @@ export const areas = [
     label: "Ciberseguridad",
     status: "EN CRECIMIENTO",
     items: ["Phishing", "Ingeniería social", "Triaje de amenazas", "Análisis de casos", "Conceptos de SIEM", "Conceptos de EDR", "Seguridad de sistemas"],
-  },
-  {
-    id: "dev",
-    label: "Desarrollo",
-    status: "ACTIVE",
-    items: ["Java", "JavaScript", "PHP", "React", "Spring Boot", "Node.js", "REST APIs"],
   },
 ];
 
@@ -106,8 +113,8 @@ export const projects = [
 ];
 
 export const stack = [
-  { group: "Lenguajes", items: ["Java", "JavaScript", "Kotlin", "PHP", "HTML", "CSS"] },
-  { group: "Frontend", items: ["React", "Next.js", "Vite"] },
+  { group: "Frontend", items: ["React", "Next.js", "Vite", "HTML5", "CSS3", "Diseño responsive"] },
+  { group: "Lenguajes", items: ["JavaScript", "Java", "Kotlin", "PHP", "HTML", "CSS"] },
   { group: "Backend", items: ["Spring Boot", "Node.js"] },
   { group: "Bases de datos", items: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"] },
   { group: "DevOps / Tools", items: ["Docker", "Git", "GitHub"] },
@@ -121,4 +128,4 @@ export const education = {
   description: "Formación especializada en desarrollo de aplicaciones, programación, bases de datos, sistemas, interfaces y desarrollo multiplataforma.",
 };
 
-export const goal = "Mi objetivo es seguir creciendo profesionalmente en el ámbito de las tecnologías de la información, especialmente en soporte IT, sistemas y ciberseguridad, adquiriendo experiencia y especialización en entornos profesionales de alta exigencia.";
+export const goal = "Mi objetivo es crecer como desarrollador Front-End en proyectos de alto impacto, creando interfaces cuidadas, accesibles y de calidad junto a equipos de diseño y backend, y seguir ampliando mi stack (Angular, SASS). Sin dejar de lado mi base en soporte IT, sistemas y ciberseguridad, que me ayuda a construir aplicaciones más robustas y seguras.";
